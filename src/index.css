@@ -125,6 +125,16 @@
     animation: none;
   }
 
+  .glow-on {
+    filter: drop-shadow(0 0 12px rgba(255, 210, 140, 0.7))
+      drop-shadow(0 0 35px rgba(255, 180, 90, 0.4))
+      drop-shadow(0 0 70px rgba(255, 150, 60, 0.25));
+  }
+
+  .glow-off {
+    filter: none;
+  }
+
   /* Desktop only */
   @media (min-width: 1024px) {
     .animate-star-btn {
