@@ -777,6 +777,155 @@
 
 /* philosophy */
 
+/* TABLET BREAKPOINT */
+@media (min-width: 768px) {
+  .philosophy-contain {
+    gap: 60px;
+    padding: 40px 0;
+  }
+
+  .left {
+    max-width: 65%;
+  }
+
+  .left .title {
+    font-size: 38px;
+    margin-bottom: 28px;
+  }
+
+  .left .para {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .blocks {
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .blocks .block {
+    width: auto;
+    flex: 1;
+    min-height: 180px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .blocks .block .image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .blocks .block h3 {
+    font-size: 19px;
+    margin-top: 12px;
+  }
+
+  .blocks .block p {
+    font-size: 14px;
+  }
+
+  .right {
+    display: flex;
+  }
+
+  .shield-mockup-container {
+    width: 320px;
+    height: 445px;
+  }
+}
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 1024px) {
+  .philosophy-contain {
+    gap: 80px;
+    padding: 60px 0;
+  }
+
+  .left {
+    max-width: 60%;
+  }
+
+  .left .title {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .left .para {
+    font-size: 20px;
+    line-height: 130%;
+    max-width: 720px;
+    margin-bottom: 22px;
+  }
+
+  .blocks {
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .blocks .block {
+    width: 240px;
+    min-height: 210px;
+    padding: 25px;
+  }
+
+  .blocks .block .image {
+    width: 65.9px;
+    height: 65.9px;
+    padding: 10px;
+  }
+
+  .blocks .block h3 {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+
+  .blocks .block p {
+    font-size: 14px;
+  }
+
+  .shield-mockup-container {
+    width: 360px;
+    height: 500px;
+  }
+}
+
+/* EXTRA MOBILE ADJUSTMENTS */
+@media (max-width: 480px) {
+  .left .title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .left .para {
+    font-size: 15px;
+  }
+
+  .blocks {
+    margin-top: 24px;
+  }
+
+  .blocks .block {
+    padding: 16px;
+  }
+
+  .blocks .block .image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .blocks .block h3 {
+    font-size: 16px;
+  }
+
+  .blocks .block p {
+    font-size: 12px;
+  }
+}
+
 /* ---------- ≤ 1200px (Laptop) ---------- */
 @media (max-width: 1200px) {
   .philosophy-contain {
@@ -786,6 +935,13 @@
 
   .left {
     max-width: 65%;
+  }
+
+  /* LAYOUT */
+  .philosophy-contain {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
   }
 
   .right {
@@ -801,13 +957,11 @@
 @media (max-width: 992px) {
   .philosophy {
     height: auto;
-    padding: 80px 0;
   }
 
   .philosophy-contain {
     flex-direction: column;
     align-items: flex-start;
-    gap: 60px;
   }
 
   .left {
@@ -867,16 +1021,10 @@
   /* SECTION */
   .philosophy {
     height: auto;
-    padding: 40px 0;
-    background: url("/assets/images/our-philosophy/mobile-banner.jpg") center /
-      cover no-repeat;
   }
 
-  /* LAYOUT */
   .philosophy-contain {
-    flex-direction: column-reverse;
     gap: 0px;
-    padding: 0;
   }
 
   /* DNA IMAGE */
