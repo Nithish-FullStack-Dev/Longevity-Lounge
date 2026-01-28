@@ -1,106 +1,12 @@
-.intro {
+.intro-wrapper {
   position: fixed;
   inset: 0;
-  background: #2b1436;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
+  z-index: 99999;
+  background: black;
 }
 
-.intro .logo {
-  position: relative;
-  width: 420px;
-  height: 420px;
-}
-
-.intro .logo img {
-  position: absolute;
-  inset: 0;
-  margin: auto;
+.intro-video {
   width: 100%;
-  pointer-events: none;
-  will-change: transform, opacity;
-}
-
-/* layering */
-.frame {
-  z-index: 1;
-}
-.left,
-.right {
-  z-index: 2;
-}
-.diamond {
-  z-index: 3;
-}
-.crown {
-  z-index: 4;
-}
-
-/* SHINE */
-.shine {
-  position: absolute;
-  inset: -30%;
-  background: linear-gradient(
-    120deg,
-    transparent 40%,
-    rgba(255, 215, 160, 0.8),
-    transparent 60%
-  );
-  transform: rotate(20deg);
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
-/* GRADIENT WIPE */
-.gradient-wipe {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(135deg, #f1a36f, #8c2f55, #2b1436);
-  opacity: 0;
-  z-index: 10000;
-}
-
-.shine-mask-left {
-  -webkit-mask-image: url("/assets/images/intro/left.svg");
-  mask-image: url("/assets/images/intro/left.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
-
-.shine-mask-right {
-  -webkit-mask-image: url("/assets/images/intro/right.svg");
-  mask-image: url("/assets/images/intro/right.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
-
-.glow-on {
-  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8))
-    drop-shadow(0 0 40px rgba(255, 215, 0, 0.5));
-  transition: filter 0.4s ease;
-}
-
-.glow-off {
-  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.3));
-}
-
-.glow-bloom,
-.glow-core {
-  filter: blur(12px);
-  opacity: 0.6;
-}
-
-.glow-core {
-  filter: blur(4px);
-  opacity: 0.9;
+  height: 100%;
+  object-fit: cover;
 }
