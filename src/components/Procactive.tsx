@@ -10,7 +10,7 @@ const SparkleGradient = ({ position }: { position: "top" | "bottom" }) => {
     <div
       className={`absolute left-1/2 -translate-x-1/2 ${
         isBottom ? "bottom-0 scale-y-[-1]" : "top-0"
-      } w-[40rem] h-40 pointer-events-none`}
+      } w-[40rem] h-40 pointer-events-none opacity-90`}
     >
       {/* Gradients */}
       <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />

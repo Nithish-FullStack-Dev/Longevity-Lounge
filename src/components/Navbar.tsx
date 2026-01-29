@@ -12,15 +12,8 @@ const Navbar = () => {
   const navMenuRef = useRef<HTMLUListElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  // Toggle menu
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
-
-  // Close menu
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const openMenu = () => setMenuOpen(true);
+  const closeMenu = () => setMenuOpen(false);
 
   // Handle ESC key
   useEffect(() => {
@@ -32,22 +25,25 @@ const Navbar = () => {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Lock body scroll when menu is open
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    if (menuOpen) {
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      document.body.style.position = "";
+      document.body.style.width = "";
+    }
   }, [menuOpen]);
 
-  // Smooth scroll
   const handleNavClick = (id: string, label: string) => {
     setActiveItem(label);
+    closeMenu();
 
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-
-    if (window.innerWidth <= 768) closeMenu();
+    navigate(`/#${id}`);
   };
+
   const NAV_BTN_CLASSES =
-    "h-10 px-5 inline-flex items-center justify-center rounded-full whitespace-nowrap";
+    "h-10 px-3 inline-flex items-center justify-center rounded-full whitespace-nowrap";
 
   return (
     <header className="site-header">
@@ -67,7 +63,7 @@ const Navbar = () => {
 
           <button
             className={`mobile-menu-toggle ${menuOpen ? "active" : ""}`}
-            onClick={toggleMenu}
+            onClick={() => (menuOpen ? closeMenu() : openMenu())}
             aria-label="Toggle menu"
           >
             <span />
@@ -173,7 +169,10 @@ const Navbar = () => {
             ) : (
               <button
                 type="button"
-                onClick={() => navigate("/callback")}
+                onClick={() => {
+                  closeMenu();
+                  navigate("/callback");
+                }}
                 className="
       px-7 py-3
       rounded-full

@@ -7,8 +7,23 @@ import Procactive from "./Procactive";
 import BehindTheScenes from "./BehindTheScenes";
 import ReadyToBegin from "./ReadyToBegin";
 import VideoGrid from "./VideoGrid";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const target = location.state?.scrollTo;
+
+    if (target) {
+      setTimeout(() => {
+        const el = document.getElementById(target);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <>
       <VideoSection />

@@ -179,14 +179,6 @@ body {
   margin: 0 auto;
 }
 
-#intro-overlay {
-  position: fixed;
-  inset: 0;
-  background: #000;
-  z-index: 999;
-  pointer-events: none;
-}
-
 .site-header {
   width: 100%;
   padding: 20px 0px;
@@ -1755,6 +1747,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .option-card:last-child {
   border-right: none;
 }
+.option-card .icon {
+  display: flex;
+  justify-content: center;
+}
 
 .option-card .icon img {
   height: 36px;
@@ -1777,7 +1773,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: inline-block;
   width: 15%;
   font-size: 16px;
-  padding: 18px 60px;
+  padding: 18px 10px;
   margin: 0;
   border-radius: 8px;
   font-family: "Inter", sans-serif;
