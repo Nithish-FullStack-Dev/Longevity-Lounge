@@ -173,14 +173,7 @@ const Navbar = () => {
                   closeMenu();
                   navigate("/callback");
                 }}
-                className="
-      px-7 py-3
-      rounded-full
-      text-[#f6bf7f]
-      font-['Inter',sans-serif]
-      bg-transparent
-      border border-white/25
-    "
+                className="px-7 py-3 rounded-full text-[#f6bf7f] font-['Inter',sans-serif] bg-transparent border border-white/25"
               >
                 Request Callback
               </button>

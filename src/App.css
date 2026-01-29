@@ -488,7 +488,7 @@
 
 @media (max-width: 508px) {
   .most-trusted-section {
-    padding-bottom: 46px;
+    padding: 46px 0;
   }
   .trusted-banner {
     padding: 13px 19px;
@@ -730,6 +730,8 @@
 
   .logo {
     order: -1;
+    display: flex;
+    justify-content: center;
   }
 
   .footer-section ul li,
@@ -1095,6 +1097,11 @@
   /* .shield-video {
     width: 245px;
   } */
+}
+@media (max-width: 509px) {
+  .health-journey-section {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 402px) {

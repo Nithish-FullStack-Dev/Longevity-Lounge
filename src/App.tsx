@@ -11,7 +11,9 @@ import "./components/intro.css";
 import IntroAnimation from "./components/IntroAnimation";
 
 const App = () => {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(() => {
+    return !sessionStorage.getItem("played");
+  });
 
   useEffect(() => {
     AOS.init({

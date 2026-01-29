@@ -51,7 +51,7 @@ export const LampContainer = ({
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
-          className="absolute top-0 right-1/2 h-40 md:h-56 w-[80vw] max-w-[30rem] md:max-w-[40rem] bg-gradient-conic from-[#b48afc] via-transparent to-transparent [--conic-position:from_70deg_at_center_top]"
+          className="absolute top-0 right-1/2 h-40 md:h-56 w-[80vw] max-w-[30rem] md:max-w-[80%] bg-gradient-conic from-[#b48afc] via-transparent to-transparent [--conic-position:from_70deg_at_center_top]"
         >
           <div className="absolute w-full left-0 bg-slate-950 h-32 md:h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
           <div className="absolute w-20 md:w-40 h-full left-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
@@ -70,7 +70,7 @@ export const LampContainer = ({
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
-          className="absolute top-0 left-1/2 h-40 md:h-56 w-[80vw] max-w-[30rem] md:max-w-[40rem] bg-gradient-conic from-transparent via-transparent to-[#b48afc] [--conic-position:from_290deg_at_center_top]"
+          className="absolute top-0 left-1/2 h-40 md:h-56 w-[80vw] max-w-[30rem] md:max-w-[80%] bg-gradient-conic from-transparent via-transparent to-[#b48afc] [--conic-position:from_290deg_at_center_top]"
         >
           <div className="absolute w-20 md:w-40 h-full right-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
           <div className="absolute w-full right-0 bg-slate-950 h-32 md:h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
@@ -104,7 +104,7 @@ export const LampContainer = ({
             duration: 1,
             ease: "easeInOut",
           }}
-          className="absolute top-0 z-50 h-0.5 w-[80vw] max-w-[30rem] md:max-w-[40rem] bg-[#b48afc]"
+          className="absolute top-0 z-50 h-0.5 w-[80vw] max-w-[30rem] md:max-w-[80%] bg-[#b48afc]"
         ></motion.div>
 
         {/* Top mask */}

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 interface IntroAnimationProps {
@@ -25,6 +25,7 @@ const IntroAnimation = ({ onFinish }: IntroAnimationProps) => {
         ease: "power2.out",
         onComplete: () => {
           document.body.style.overflow = "auto";
+          sessionStorage.setItem("played", "intro");
           onFinish();
         },
       });
