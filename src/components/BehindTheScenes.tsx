@@ -25,7 +25,7 @@ const BehindTheScenes = () => {
             data-aos-easing="ease-out"
             data-aos-once="true"
           >
-            <img src="assets/images/behing-the-scenes/1.png" />
+            <img src="assets/images/behing-the-scenes/1.webp" />
           </div>
           <div
             data-aos="fade-up"
@@ -34,8 +34,8 @@ const BehindTheScenes = () => {
             data-aos-once="true"
             className="bs-col bs-col-split"
           >
-            <img src="/assets/images/behing-the-scenes/2.jpg" />
-            <img src="/assets/images/behing-the-scenes/3.jpg" />
+            <img src="/assets/images/behing-the-scenes/2.webp" />
+            <img src="/assets/images/behing-the-scenes/3.webp" />
           </div>
 
           <div
@@ -45,7 +45,7 @@ const BehindTheScenes = () => {
             data-aos-once="true"
             className="bs-col bs-col-large"
           >
-            <img src="/assets/images/behing-the-scenes/4.jpg" />
+            <img src="/assets/images/behing-the-scenes/4.webp" />
           </div>
 
           <div
@@ -55,8 +55,8 @@ const BehindTheScenes = () => {
             data-aos-once="true"
             className="bs-col bs-col-split reverse"
           >
-            <img src="/assets/images/behing-the-scenes/6.jpg" />
-            <img src="/assets/images/behing-the-scenes/5.jpg" />
+            <img src="/assets/images/behing-the-scenes/6.webp" />
+            <img src="/assets/images/behing-the-scenes/5.webp" />
           </div>
         </div>
       </div>

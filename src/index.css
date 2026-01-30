@@ -4,40 +4,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define the regular font */
 @font-face {
   font-family: "The Seasons";
-  src: url("../assets/fonts/Fontspring-DEMO-theseasons-reg.otf")
-    format("opentype");
-  font-weight: normal;
+  src:
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsLightRegular.woff2")
+      format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsLightRegular.woff")
+      format("woff");
+  font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
-/* Define the bold font */
 @font-face {
   font-family: "The Seasons";
-  src: url("../assets/fonts/Fontspring-DEMO-theseasons-bd.otf")
-    format("opentype");
-  font-weight: bold;
+  src:
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsRegular.woff2") format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsRegular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-/* Define the italic font */
 @font-face {
   font-family: "The Seasons";
-  src: url("../assets/fonts/Fontspring-DEMO-theseasons-it.otf")
-    format("opentype");
-  font-weight: normal;
-  font-style: italic;
+  src:
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsBold.woff2") format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Define the bold italic font */
 @font-face {
   font-family: "The Seasons";
-  src: url("../assets/fonts/Fontspring-DEMO-theseasons-bdit.otf")
-    format("opentype");
-  font-weight: bold;
+  src:
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsItalic.woff2") format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsItalic.woff") format("woff");
+  font-weight: 400;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "The Seasons";
+  src:
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsBoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/FONTSPRINGDEMO-TheSeasonsBoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 @layer base {

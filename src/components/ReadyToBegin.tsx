@@ -12,7 +12,7 @@ const ReadyToBegin = () => {
         <div className="hj-container">
           <div className="hj-left">
             <img
-              src="../assets/images/ready-to-begin/Image.jpg"
+              src="../assets/images/ready-to-begin/Image.webp"
               alt="Doctor Consultation"
             />
           </div>
