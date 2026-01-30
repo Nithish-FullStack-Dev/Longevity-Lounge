@@ -352,8 +352,8 @@
   }
 
   .established-title {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 26px;
+    line-height: 1.4;
     margin: 0 auto 19px;
     padding: 0 0px;
   }
@@ -425,7 +425,7 @@
   }
 
   .hex-label p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.15;
   }
 }
@@ -436,7 +436,7 @@
   }
 
   .hex-label p {
-    font-size: 9px;
+    font-size: 13px;
     line-height: 1;
   }
 }
@@ -497,7 +497,7 @@
     font-size: 14px;
   }
   .section-title {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 1.5;
   }
 }
@@ -573,10 +573,10 @@
     line-height: 134%;
   }
   .ps-header p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .ps-item h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .ps-item h4::before {
     height: 13px;
@@ -622,10 +622,6 @@
     flex-direction: column;
   }
 
-  .bs-gallery img {
-    border-radius: 12px;
-  }
-
   .behind-scenes-section {
     padding: 36px 0;
   }
@@ -636,13 +632,13 @@
   }
 
   .bs-header h2 {
-    font-size: 26px;
+    font-size: 28px;
     line-height: 1.5;
   }
 
   .bs-header p {
     padding: 0;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -659,7 +655,7 @@
   }
 
   .bp-header h2 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.5;
   }
 }
@@ -672,8 +668,9 @@
   }
 
   .hj-title {
-    font-size: 30px;
+    font-size: 28px;
     max-width: 100%;
+    line-height: 1.7;
   }
 
   .hj-left {
@@ -743,6 +740,7 @@
   .footer-section ul li,
   .footer-section p {
     font-size: 13px;
+    margin-top: 10px;
   }
 
   .copyright::after {
@@ -774,7 +772,11 @@
     transform: skewX(48deg);
   }
   .footer-section h4 {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    margin-top: 10px;
   }
 }
 
@@ -792,12 +794,11 @@
   }
 
   .left .title {
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 28px;
   }
 
   .left .para {
-    font-size: 18px;
     margin-bottom: 18px;
   }
 
@@ -822,12 +823,12 @@
   }
 
   .blocks .block h3 {
-    font-size: 19px;
+    font-size: 24px;
     margin-top: 12px;
   }
 
   .blocks .block p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .right {
@@ -852,12 +853,12 @@
   }
 
   .left .title {
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 32px;
   }
 
   .left .para {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 130%;
     max-width: 720px;
     margin-bottom: 22px;
@@ -881,13 +882,13 @@
   }
 
   .blocks .block h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 16px;
     margin-bottom: 6px;
   }
 
   .blocks .block p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .shield-mockup-container {
@@ -903,10 +904,6 @@
     line-height: 120%;
   }
 
-  .left .para {
-    font-size: 15px;
-  }
-
   .blocks {
     margin-top: 24px;
   }
@@ -918,14 +915,6 @@
   .blocks .block .image {
     width: 45px;
     height: 45px;
-  }
-
-  .blocks .block h3 {
-    font-size: 16px;
-  }
-
-  .blocks .block p {
-    font-size: 12px;
   }
 }
 
@@ -997,7 +986,7 @@
 /* ---------- ≤ 768px (Tablet / Large Mobile) ---------- */
 @media (max-width: 768px) {
   .left .title {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .left .para {
@@ -1051,7 +1040,7 @@
 
   /* TITLE */
   .left .title {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 18px;
@@ -1059,7 +1048,6 @@
 
   /* PARAGRAPHS */
   .left .para {
-    font-size: 13px;
     line-height: 1.6;
     text-align: center;
     margin-bottom: 14px;
@@ -1092,12 +1080,7 @@
 
   /* BLOCK TEXT */
   .blocks .block h3 {
-    font-size: 16px;
     margin-top: 12px;
-  }
-
-  .blocks .block p {
-    font-size: 12px;
   }
 
   /* .shield-video {
