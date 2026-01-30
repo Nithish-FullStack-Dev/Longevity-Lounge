@@ -175,7 +175,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 
@@ -303,8 +303,8 @@ body {
 /* ================= ESTABLISHED SECTION ================= */
 .established {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: #fff;
 
   background-image: url("/assets/images/Section.svg");
@@ -486,8 +486,8 @@ body {
 
 /* Most trusted*/
 .most-trusted-section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-top: 80px;
   position: relative;
   overflow: hidden;
 
@@ -789,7 +789,7 @@ body {
 /* Proactive  */
 .proactive-section {
   position: relative;
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -921,7 +921,7 @@ body {
 
 /* Behind the scenes  */
 .behind-scenes-section {
-  padding: 60px 0;
+  padding: 80px 0;
   background: var(--bg-dark);
 }
 
@@ -989,7 +989,7 @@ body {
 
 /* Blue Print */
 .blueprint-section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 /* HEADER */
@@ -1128,7 +1128,7 @@ body {
 
 /* Ready to Begin */
 .health-journey-section {
-  padding: 60px 0;
+  padding: 80px 0;
   background: var(--bg-dark);
 }
 
@@ -1179,6 +1179,10 @@ body {
   gap: 22px;
 }
 
+.submit {
+  margin-top: 10px;
+}
+
 .hj-field label {
   display: block;
   margin-bottom: 9px;
@@ -1206,7 +1210,7 @@ body {
 /* PILLS */
 .hj-pills {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   margin: 16px 0;
   flex-wrap: wrap;
 }
@@ -1730,6 +1734,7 @@ h1 {
   font-size: 15px;
   color: var(--gold);
   outline: none;
+  font-family: "Inter", sans-serif;
 }
 
 /* Focus border */
@@ -1780,7 +1785,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .submit-btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 10px 28px;
   border-radius: 9999px;
   font-family: "Inter", sans-serif;
   color: var(--gold);

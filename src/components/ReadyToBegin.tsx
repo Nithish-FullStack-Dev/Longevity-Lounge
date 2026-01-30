@@ -1,3 +1,6 @@
+import type React from "react";
+import { StarButton } from "./ui/star-button";
+
 const ReadyToBegin = () => {
   return (
     <section id="contact" className="health-journey-section">
@@ -51,9 +54,33 @@ const ReadyToBegin = () => {
                     </select>
                   </div>
                 </div>
-                <div className="hj-field">
-                  <button type="submit" className="submit-btn">
-                    Submit
+                <div className="hj-field submit">
+                  <button
+                    type="submit"
+                    onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                      e.preventDefault();
+                      alert("form is currently under development");
+                    }}
+                  >
+                    <StarButton
+                      lightColor="#F6BF7F"
+                      backgroundColor="black"
+                      borderWidth={1}
+                      className="
+                            bg-transparent
+                            border border-white/25
+                            px-7 py-3
+                            rounded-full
+                            pointer-events-none
+                    
+                            [&_span]:text-[#f6bf7f]
+                            [&_span]:bg-none
+                            [&_span]:!text-opacity-100
+                            [&_span]:font-['Inter',sans-serif]
+                          "
+                    >
+                      Submit
+                    </StarButton>
                   </button>
                 </div>
               </div>
