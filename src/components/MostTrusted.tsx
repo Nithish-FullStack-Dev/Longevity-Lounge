@@ -1,7 +1,33 @@
 import { Microscope } from "lucide-react";
 import "aos/dist/aos.css";
+import { useEffect, useRef } from "react";
 
 const MostTrusted = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.muted = false;
+          video.play().catch(() => {});
+        } else {
+          video.muted = true;
+        }
+      },
+      {
+        threshold: 0.5,
+      },
+    );
+
+    observer.observe(video);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="about" className="most-trusted-section">
       <div className="container">
@@ -34,7 +60,14 @@ const MostTrusted = () => {
                 className="phone-frame"
               />
 
-              <video className="phone-video" autoPlay loop muted playsInline>
+              <video
+                ref={videoRef}
+                className="phone-video"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source
                   src="assets/images/video/LL long video with audio low (1).mp4"
                   type="video/mp4"

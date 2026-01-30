@@ -32,7 +32,9 @@ const VideoSection = () => {
       </video>
 
       {/* Optional hint */}
-      {isMuted && <div className="video-tap-hint">Tap to unmute</div>}
+      {isMuted && (
+        <div className="video-tap-hint animate-bounce">Tap to unmute</div>
+      )}
     </section>
   );
 };
