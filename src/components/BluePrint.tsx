@@ -1,6 +1,9 @@
 import "aos/dist/aos.css";
+import { useMediaQuery } from "react-responsive";
 
 const BluePrint = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <section className="blueprint-section">
       <div className="container">
@@ -39,7 +42,7 @@ const BluePrint = () => {
 
           <div
             className="bp-card"
-            data-aos="fade-down"
+            data-aos={isMobile ? "fade-up" : "fade-down"}
             data-aos-duration="900"
             data-aos-delay="300"
             data-aos-easing="ease-out"
@@ -82,7 +85,7 @@ const BluePrint = () => {
 
           <div
             className="bp-card"
-            data-aos="fade-down"
+            data-aos={isMobile ? "fade-up" : "fade-down"}
             data-aos-duration="900"
             data-aos-delay="700"
             data-aos-easing="ease-out"

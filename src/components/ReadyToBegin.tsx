@@ -71,7 +71,6 @@ const ReadyToBegin = () => {
                             border border-white/25
                             px-7 py-3
                             rounded-full
-                            pointer-events-none
                     
                             [&_span]:text-[#f6bf7f]
                             [&_span]:bg-none

@@ -115,7 +115,7 @@
 
   .nav-cta {
     position: fixed;
-    bottom: 40%;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%) translateY(20px);
     opacity: 0;
@@ -154,7 +154,7 @@
   }
 
   .nav-cta .follow-us h5 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     font-family: "Inter", sans-serif;
@@ -500,6 +500,9 @@
     font-size: 26px;
     line-height: 1.5;
   }
+  .phone-container {
+    max-width: 243px;
+  }
 }
 
 @media (max-width: 402px) {
@@ -524,9 +527,6 @@
 @media (max-width: 508px) {
   .blueprint-section {
     padding: 44px 0;
-  }
-  .bp-header p {
-    font-size: 16px;
   }
 }
 
@@ -571,9 +571,6 @@
   .ps-header h2 {
     font-size: 24px;
     line-height: 134%;
-  }
-  .ps-header p {
-    font-size: 16px;
   }
   .ps-item h4 {
     font-size: 16px;
@@ -659,7 +656,7 @@
   }
 
   .bp-header h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
   }
 }
@@ -715,8 +712,7 @@
   }
   .nav-cta.active {
     left: 50%;
-    right: 50%;
-    bottom: 5%;
+    bottom: 23%;
     transform: translateX(-50%);
   }
 }
@@ -798,7 +794,6 @@
   }
 
   .left .title {
-    font-size: 32px;
     margin-bottom: 28px;
   }
 
@@ -857,12 +852,10 @@
   }
 
   .left .title {
-    font-size: 32px;
     margin-bottom: 32px;
   }
 
   .left .para {
-    font-size: 24px;
     line-height: 130%;
     max-width: 720px;
     margin-bottom: 22px;
@@ -903,11 +896,6 @@
 
 /* EXTRA MOBILE ADJUSTMENTS */
 @media (max-width: 480px) {
-  .left .title {
-    font-size: 24px;
-    line-height: 120%;
-  }
-
   .blocks {
     margin-top: 24px;
   }
@@ -989,10 +977,6 @@
 
 /* ---------- ≤ 768px (Tablet / Large Mobile) ---------- */
 @media (max-width: 768px) {
-  .left .title {
-    font-size: 32px;
-  }
-
   .left .para {
     font-size: 18px;
     max-width: 100%;

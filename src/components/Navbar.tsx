@@ -44,6 +44,8 @@ const Navbar = () => {
 
   const NAV_BTN_CLASSES =
     "h-10 px-3 inline-flex items-center justify-center rounded-full whitespace-nowrap";
+  const NAV_ITEM_BASE =
+    "w-full h-[48px] flex items-center justify-start px-4 text-left";
 
   return (
     <header className="site-header">
@@ -77,14 +79,17 @@ const Navbar = () => {
           >
             {[
               { label: "Home", id: "home" },
-              { label: "About", id: "about" },
               { label: "Our Services", id: "services" },
+              { label: "About", id: "about" },
               { label: "Contact", id: "contact" },
             ].map((item) => {
               const isActive = activeItem === item.label;
 
               return (
-                <li key={item.label} className="nav-item overflow-visible">
+                <li
+                  key={item.label}
+                  className="nav-item overflow-visible w-full"
+                >
                   {isActive ? (
                     isDesktop ? (
                       /* DESKTOP — Animated StarButton */
@@ -115,7 +120,7 @@ const Navbar = () => {
                             ? handleNavClick(item.id, item.label)
                             : setActiveItem("Home")
                         }
-                        className={`${NAV_BTN_CLASSES} text-[#f6bf7f] font-['Inter',sans-serif] bg-transparent`}
+                        className={`${NAV_ITEM_BASE} text-[#f6bf7f] font-['Inter',sans-serif] bg-transparent`}
                       >
                         {item.label}
                       </button>
@@ -129,7 +134,7 @@ const Navbar = () => {
                           ? handleNavClick(item.id, item.label)
                           : setActiveItem("Home")
                       }
-                      className={`${NAV_BTN_CLASSES} nav-link`}
+                      className={`${NAV_ITEM_BASE} nav-link`}
                     >
                       {item.label}
                     </button>
@@ -173,7 +178,7 @@ const Navbar = () => {
                   closeMenu();
                   navigate("/callback");
                 }}
-                className="px-7 py-3 rounded-full text-[#f6bf7f] font-['Inter',sans-serif] bg-transparent border border-white/25"
+                className="sm:px-7 sm:py-3 p-3 rounded-full text-[#f6bf7f] font-['Inter',sans-serif] bg-transparent border border-white/25"
               >
                 Request Callback
               </button>

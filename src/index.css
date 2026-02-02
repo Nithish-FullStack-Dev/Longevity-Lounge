@@ -666,10 +666,10 @@ body {
 }
 
 .text-content .title .icon-highlight {
-  background: #fef3c7;
+  background: #d97706;
   padding: 6px;
   border-radius: 6px;
-  color: #d97706;
+  color: white;
   width: 50px;
   height: 45px;
 }
@@ -856,7 +856,7 @@ body {
 
 .ps-header p {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--text-light);
   font-weight: 400;
   line-height: 1.7;
@@ -955,7 +955,7 @@ body {
   color: var(--gold);
   margin-bottom: 18px;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .bs-header p {
@@ -963,7 +963,7 @@ body {
   line-height: 1.7;
   color: var(--text-light);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   padding: 0 70px;
 }
@@ -1017,7 +1017,7 @@ body {
 }
 
 .bp-header h2 {
-  font-size: 38px;
+  font-size: 32px;
   color: var(--gold);
   font-family: var(--font-family);
   font-weight: normal;
@@ -1029,7 +1029,7 @@ body {
   line-height: 1.7;
   color: var(--text-light);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -1523,7 +1523,7 @@ body {
 .left .title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 38px;
   line-height: 110%;
   color: #f6bf7f;
   text-align: left;
@@ -1534,7 +1534,7 @@ body {
 .left .para {
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 140%;
   max-width: 100%;
   margin-bottom: 16px;
