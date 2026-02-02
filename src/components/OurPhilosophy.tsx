@@ -7,12 +7,7 @@ const OurPhilosophy = () => {
       <LampContainer className="min-h-0">
         <div className="container">
           <div className="philosophy-contain">
-            <div
-              className="left"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-easing="ease-out"
-            >
+            <div className="left">
               <h1
                 className="title"
                 data-aos="fade-up"
@@ -47,12 +42,7 @@ const OurPhilosophy = () => {
               </p>
 
               <div className="blocks">
-                <div
-                  className="block"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="700"
-                  data-aos-delay="400"
-                >
+                <div className="block">
                   <div className="image">
                     <img
                       src="/assets/images/our-philosophy/genetic.png"
@@ -63,12 +53,7 @@ const OurPhilosophy = () => {
                   <p>Personalized DNA Analysis</p>
                 </div>
 
-                <div
-                  className="block"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="700"
-                  data-aos-delay="500"
-                >
+                <div className="block">
                   <div className="image">
                     <img
                       src="/assets/images/our-philosophy/target.png"
@@ -79,12 +64,7 @@ const OurPhilosophy = () => {
                   <p>Proactive Health Strategies</p>
                 </div>
 
-                <div
-                  className="block"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="700"
-                  data-aos-delay="600"
-                >
+                <div className="block">
                   <div className="image">
                     <img
                       src="/assets/images/our-philosophy/genetic.png"

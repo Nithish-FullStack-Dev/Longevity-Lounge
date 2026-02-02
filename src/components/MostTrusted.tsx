@@ -51,12 +51,7 @@ const MostTrusted = () => {
         </div>
 
         <div className="content-wrapper">
-          <div
-            className="phone-mockup"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
+          <div className="phone-mockup">
             <div className="phone-container">
               <div className="phone-glow"></div>
               <img
@@ -82,12 +77,7 @@ const MostTrusted = () => {
             </div>
           </div>
 
-          <div
-            className="text-content"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
+          <div className="text-content">
             <div
               className="title"
               data-aos="fade-up"
