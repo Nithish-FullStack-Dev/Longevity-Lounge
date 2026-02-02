@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   const NAV_BTN_CLASSES =
-    "h-10 px-3 inline-flex items-center justify-center rounded-full whitespace-nowrap";
+    "px-3 inline-flex items-center justify-center rounded-full whitespace-nowrap";
   const NAV_ITEM_BASE =
     "w-full h-[48px] flex items-center justify-start px-4 text-left";
 
@@ -86,10 +86,7 @@ const Navbar = () => {
               const isActive = activeItem === item.label;
 
               return (
-                <li
-                  key={item.label}
-                  className="nav-item overflow-visible w-full"
-                >
+                <li key={item.label} className="nav-item overflow-visible">
                   {isActive ? (
                     isDesktop ? (
                       /* DESKTOP — Animated StarButton */
