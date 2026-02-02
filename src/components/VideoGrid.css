@@ -24,8 +24,6 @@
   aspect-ratio: 16 / 9;
   cursor: pointer;
   overflow: hidden;
-
-  border-radius: 10px;
 }
 
 .video-card img,
@@ -98,6 +96,28 @@
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
   margin-left: 5px;
+}
+
+.video-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  background: #1a0d26;
+  border: 0.65px solid #f6bf7f;
+  color: white;
+
+  padding: 4px 12px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 1;
+
+  pointer-events: none;
 }
 
 /* Tablet */
