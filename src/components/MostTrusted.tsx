@@ -1,78 +1,50 @@
 import { Microscope } from "lucide-react";
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef } from "react";
 import "aos/dist/aos.css";
+import { StarButton } from "./ui/star-button";
 
 const MostTrusted = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const isPlayingRef = useRef(false); // tracks whether video has actually started playing
-
-  // Safely unmute: only after the video is confirmed playing
-  const safeUnmute = useCallback(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // If video hasn't started yet, force a muted play first, then unmute on success
-    if (video.paused || video.readyState < HTMLMediaElement.HAVE_ENOUGH_DATA) {
-      video.muted = true;
-      video
-        .play()
-        .then(() => {
-          isPlayingRef.current = true;
-          video.muted = false; // safe to unmute now — autoplay succeeded while muted
-        })
-        .catch(() => {
-          // Autoplay blocked entirely; stay muted so video at least plays silently
-          video.muted = true;
-        });
-    } else {
-      // Already playing — just unmute
-      video.muted = false;
-    }
-  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // --- 1. Guarantee initial muted autoplay fires ---
-    video.muted = true;
-    video
-      .play()
-      .then(() => {
-        isPlayingRef.current = true;
-      })
-      .catch(() => {
-        // Autoplay blocked; video stays muted and paused — browser will allow
-        // it once user interacts or scrolls (handled by observer below).
-      });
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    // --- 2. Listen for the native "playing" event as a reliable signal ---
-    const onPlaying = () => {
-      isPlayingRef.current = true;
-    };
-    video.addEventListener("playing", onPlaying);
-
-    // --- 3. IntersectionObserver for mute/unmute on scroll ---
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      ([entry]) => {
+        if (!isMobile) {
+          // Desktop: auto unmute when visible
           if (entry.isIntersecting) {
-            safeUnmute(); // unmute only when safe
+            video.muted = false;
+            video.play().catch(() => {});
           } else {
-            if (video) video.muted = true; // mute when scrolled away
+            video.muted = true;
           }
-        });
+        }
       },
-      { threshold: 0.3 },
+      {
+        threshold: 0.5,
+        rootMargin: "-80px",
+      },
     );
 
     observer.observe(video);
 
     return () => {
+      observer.unobserve(video);
       observer.disconnect();
-      video.removeEventListener("playing", onPlaying);
     };
-  }, [safeUnmute]);
+  }, []);
+
+  const handleVideoTap = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.muted = !video.muted;
+    video.play().catch(() => {});
+  };
 
   return (
     <section id="about" className="most-trusted-section">
@@ -109,6 +81,7 @@ const MostTrusted = () => {
                 playsInline
                 preload="auto"
                 poster="/assets/images/video-poster.jpg"
+                onClick={handleVideoTap}
               >
                 <source
                   src="/assets/images/video/LL long video with audio low (1).mp4"
@@ -195,15 +168,26 @@ const MostTrusted = () => {
               data-aos-duration="800"
               data-aos-delay="700"
             >
-              <a href="#" className="cta-button">
-                <div className="cta-content">
-                  <h4>Explore More</h4>
-                  <img
-                    src="/assets/images/most-trusted/right-arrow.png"
-                    alt=""
-                  />
-                </div>
-              </a>
+              <div className="cta-content">
+                <StarButton
+                  lightColor="#F6BF7F"
+                  backgroundColor="black"
+                  borderWidth={1}
+                  className="
+                          bg-transparent
+                          border border-white/25
+                          px-7 py-3
+                          rounded-full
+                  
+                          [&_span]:text-[#f6bf7f]
+                          [&_span]:bg-none
+                          [&_span]:!text-opacity-100
+                          [&_span]:font-['Inter',sans-serif]
+                        "
+                >
+                  Explore More
+                </StarButton>
+              </div>
             </div>
           </div>
         </div>
