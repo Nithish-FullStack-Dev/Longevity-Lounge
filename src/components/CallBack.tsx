@@ -10,7 +10,7 @@ const CallBack = () => {
             src="/assets/images/callbacks/left-arrow.png"
             alt=""
             height="9"
-            width="4.5"
+            width="6"
           />
           Back to home
         </button>
@@ -70,7 +70,7 @@ const CallBack = () => {
           <textarea name="query" placeholder=" "></textarea>
         </div>
 
-        <button type="submit" className="callback">
+        <button type="submit" className="callback submit-btn">
           Submit
         </button>
       </form>

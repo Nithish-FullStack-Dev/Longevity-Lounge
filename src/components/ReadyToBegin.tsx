@@ -1,5 +1,4 @@
 import type React from "react";
-import { StarButton } from "./ui/star-button";
 
 const ReadyToBegin = () => {
   return (
@@ -61,25 +60,9 @@ const ReadyToBegin = () => {
                       e.preventDefault();
                       alert("form is currently under development");
                     }}
+                    className="submit-btn"
                   >
-                    <StarButton
-                      lightColor="#F6BF7F"
-                      backgroundColor="black"
-                      borderWidth={1}
-                      className="
-                            bg-transparent
-                            border border-white/25
-                            px-7 py-3
-                            rounded-full
-                    
-                            [&_span]:text-[#f6bf7f]
-                            [&_span]:bg-none
-                            [&_span]:!text-opacity-100
-                            [&_span]:font-['Inter',sans-serif]
-                          "
-                    >
-                      Submit
-                    </StarButton>
+                    Submit
                   </button>
                 </div>
               </div>

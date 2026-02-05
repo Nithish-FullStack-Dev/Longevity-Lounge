@@ -269,7 +269,7 @@ body {
 .nav-menu {
   display: flex;
   gap: 6px;
-  padding: 8px;
+  padding: 4px 1px;
   border-radius: 999px;
   background: var(--pill-bg);
   border: 1px solid var(--pill-border);
@@ -509,7 +509,6 @@ body {
 /* Most trusted*/
 .most-trusted-section {
   padding-bottom: 80px;
-  padding-top: 80px;
   position: relative;
   overflow: hidden;
 
@@ -801,6 +800,21 @@ body {
   pointer-events: none;
 }
 
+@property --gradient-angle-cta {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotateBorderCTA {
+  0% {
+    --gradient-angle-cta: 0deg;
+  }
+  100% {
+    --gradient-angle-cta: 360deg;
+  }
+}
+
 .cta-content img {
   width: 7.1339px;
   height: 12.96999px;
@@ -940,7 +954,7 @@ body {
 
 /* Behind the scenes  */
 .behind-scenes-section {
-  padding: 80px 0;
+  padding-bottom: 80px;
   background: var(--bg-dark);
 }
 
@@ -1144,7 +1158,7 @@ body {
 
 /* Ready to Begin */
 .health-journey-section {
-  padding: 80px 0;
+  padding-bottom: 80px;
   background: var(--bg-dark);
 }
 
@@ -1158,7 +1172,7 @@ body {
   font-size: 32px;
   text-align: center;
   max-width: 60%;
-  margin: 0 auto 26px auto;
+  margin: 0 auto 45px auto;
 }
 
 /* MAIN GRID */
@@ -1684,7 +1698,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 18px;
   color: #f6bf7f;
   text-decoration: none;
   flex-basis: 15%;
@@ -1694,13 +1708,12 @@ body {
   display: flex;
   align-content: center;
   justify-content: flex-start;
-  gap: 42px;
   margin-bottom: 40px;
 }
 
 .callback-content .title {
   display: flex;
-  width: 100%;
+  width: 65%;
   /* align-items: center; */
   justify-content: center;
 }
@@ -1816,7 +1829,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .submit-btn {
   display: inline-block;
-  padding: 10px 28px;
+  padding: 8px 11px;
   border-radius: 9999px;
   font-family: "Inter", sans-serif;
   color: var(--gold);
@@ -1827,7 +1840,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   transition: all 0.3s ease;
   position: relative;
   margin: 0 auto;
-  width: 51%;
+  width: 40%;
 }
 
 .submit-btn:hover {
@@ -1836,11 +1849,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* Rotating gradient border effect for CTA button */
-/* .submit-btn::before {
+.submit-btn::before {
   content: "";
   position: absolute;
   inset: -1px;
-  border-radius: 8px;
+  border-radius: 9999px;
   padding: 1px;
   background: conic-gradient(
     from var(--gradient-angle-cta),
@@ -1860,7 +1873,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   mask-composite: exclude;
   animation: rotateBorderCTA 3s linear infinite;
   pointer-events: none;
-} */
+}
 
 /* ---------------- Bottom Cards ---------------- */
 .bottom-options {
@@ -1889,20 +1902,21 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .option-card .icon img {
-  height: 36px;
-  margin-bottom: 18px;
+  height: 45px;
+  margin-bottom: 10px;
 }
 
 .option-card h3 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 6px;
   color: #ffffff;
 }
 
 .option-card p {
-  font-size: 13px;
+  font-size: 18px;
   color: #868686;
+  font-family: "Inter", sans-serif;
 }
 
 .callback {
@@ -1911,7 +1925,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
   padding: 18px 10px;
   margin: 0;
-  border-radius: 8px;
   font-family: "Inter", sans-serif;
   color: var(--gold);
   border: 1px solid var(--pill-border);
@@ -1936,12 +1949,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .select-wrapper::after {
   content: "▾"; /* or use SVG */
   position: absolute;
-  right: 14px;
+  right: 28px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .custom-select {

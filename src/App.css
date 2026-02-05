@@ -352,7 +352,7 @@
   .established {
     padding-top: 40px;
     padding-bottom: 0; /* IMPORTANT */
-    margin-bottom: -180px; /* pulls next section upward */
+    margin-bottom: -140px; /* pulls next section upward */
   }
 
   .established-title {
@@ -484,7 +484,8 @@
 
 @media (max-width: 508px) {
   .most-trusted-section {
-    padding: 46px 0;
+    padding-bottom: 46px;
+    padding-top: 10px;
   }
   .trusted-banner {
     padding: 13px 19px;
@@ -620,7 +621,7 @@
   }
 
   .behind-scenes-section {
-    padding: 36px 0;
+    padding-bottom: 36p;
   }
 
   .bs-header {
@@ -1073,13 +1074,13 @@
 }
 @media (max-width: 509px) {
   .health-journey-section {
-    padding: 40px 0;
+    padding-bottom: 40px;
   }
 }
 
 @media (max-width: 402px) {
   .health-journey-section {
-    padding: 36px 0;
+    padding-bottom: 36px;
   }
   .shield-video {
     height: 94%;
@@ -1109,7 +1110,7 @@
 
 @media (max-width: 295px) {
   .health-journey-section {
-    padding: 36px 0;
+    padding-bottom: 36px;
   }
   /* .shield-video {
     width: 94%;
@@ -1143,13 +1144,12 @@
 
 @media (max-width: 480px) {
   .submit-btn {
-    width: 100%;
+    width: 40%;
   }
 
   .submit-btn {
-    padding: 14px 54px;
+    padding: 12px 0;
     font-size: 17px;
-    margin-top: 19px;
   }
 }
 
@@ -1161,8 +1161,12 @@
   .callback-content {
     flex-direction: column;
   }
+  .callback-content .title {
+    width: 100%;
+  }
+
   .callback {
-    width: 38%;
+    width: 24%;
     font-size: 16px;
     padding: 9px 0px;
   }

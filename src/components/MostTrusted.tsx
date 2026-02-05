@@ -1,7 +1,6 @@
 import { Microscope } from "lucide-react";
 import { useEffect, useRef } from "react";
 import "aos/dist/aos.css";
-import { StarButton } from "./ui/star-button";
 
 const MostTrusted = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -168,26 +167,15 @@ const MostTrusted = () => {
               data-aos-duration="800"
               data-aos-delay="700"
             >
-              <div className="cta-content">
-                <StarButton
-                  lightColor="#F6BF7F"
-                  backgroundColor="black"
-                  borderWidth={1}
-                  className="
-                          bg-transparent
-                          border border-white/25
-                          px-7 py-3
-                          rounded-full
-                  
-                          [&_span]:text-[#f6bf7f]
-                          [&_span]:bg-none
-                          [&_span]:!text-opacity-100
-                          [&_span]:font-['Inter',sans-serif]
-                        "
-                >
-                  Explore More
-                </StarButton>
-              </div>
+              <a href="#" className="cta-button">
+                <div className="cta-content">
+                  <h4>Explore More</h4>
+                  <img
+                    src="/assets/images/most-trusted/right-arrow.png"
+                    alt=""
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
