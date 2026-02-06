@@ -198,7 +198,7 @@ body {
 
 .site-header {
   width: 100%;
-  padding: 20px 0px;
+  padding: 15px 0px;
   position: sticky;
   left: 0;
   right: 0;
@@ -257,7 +257,7 @@ body {
 }
 
 .nav-logo img {
-  width: 70px;
+  width: 80px;
   height: auto;
   will-change: transform;
 }

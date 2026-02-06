@@ -12,10 +12,11 @@ interface VideoItem {
 const videos: VideoItem[] = [
   {
     id: 1,
-    src: "/assets/images/video-grid/Longevity Leadership.mp4",
-    poster: "/assets/images/video-grid/1.jpeg",
-    label: "Leadership",
+    src: "/assets/images/video-grid/Beauty Video Script.mp4",
+    poster: "/assets/images/video-grid/9.webp",
+    label: "Beauty",
   },
+
   {
     id: 2,
     src: "/assets/images/video-grid/Cancer & Longevity Script.mp4",
@@ -24,45 +25,45 @@ const videos: VideoItem[] = [
   },
   {
     id: 3,
-    src: "/assets/images/video-grid/Ll Neuro Brochure Video.mp4",
-    poster: "/assets/images/video-grid/3.jpeg",
-    label: "Neuro",
-  },
-  {
-    id: 4,
-    src: "/assets/images/video-grid/Ll Heart Brochure Video.mp4",
-    poster: "/assets/images/video-grid/4.jpeg",
-    label: "Kids",
-  },
-  {
-    id: 5,
-    src: "/assets/images/video-grid/Ll Fertility Brochure Vide.mp4",
-    poster: "/assets/images/video-grid/5.jpeg",
-    label: "Heart",
-  },
-  {
-    id: 6,
-    src: "/assets/images/video-grid/Ll Kids Brochure Video.mp4",
-    poster: "/assets/images/video-grid/6.jpeg",
-    label: "Gas Stroke",
-  },
-  {
-    id: 7,
     src: "/assets/images/video-grid/Ll Gastrointestinal Brochur Video.mp4",
     poster: "/assets/images/video-grid/7.jpeg",
     label: "Endocrine",
   },
   {
-    id: 8,
+    id: 4,
     src: "/assets/images/video-grid/Ll Endocrinology Brochure Video.mp4",
     poster: "/assets/images/video-grid/8.webp",
     label: "Fertility",
   },
   {
+    id: 5,
+    src: "/assets/images/video-grid/Ll Kids Brochure Video.mp4",
+    poster: "/assets/images/video-grid/6.jpeg",
+    label: "Gas Stroke",
+  },
+  {
+    id: 6,
+    src: "/assets/images/video-grid/Ll Fertility Brochure Vide.mp4",
+    poster: "/assets/images/video-grid/5.jpeg",
+    label: "Heart",
+  },
+  {
+    id: 7,
+    src: "/assets/images/video-grid/Ll Heart Brochure Video.mp4",
+    poster: "/assets/images/video-grid/4.jpeg",
+    label: "Kids",
+  },
+  {
+    id: 8,
+    src: "/assets/images/video-grid/Longevity Leadership.mp4",
+    poster: "/assets/images/video-grid/1.jpeg",
+    label: "Leadership",
+  },
+  {
     id: 9,
-    src: "/assets/images/video-grid/Beauty Video Script.mp4",
-    poster: "/assets/images/video-grid/9.webp",
-    label: "Beauty",
+    src: "/assets/images/video-grid/Ll Neuro Brochure Video.mp4",
+    poster: "/assets/images/video-grid/3.jpeg",
+    label: "Neuro",
   },
 ];
 

@@ -63,7 +63,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                 navigate("/");
               }}
             >
-              <img src="/assets/images/Logo.jpg" alt="Longevity Lounge Logo" />
+              <img src="/assets/images/logo.png" alt="Longevity Lounge Logo" />
             </a>
           </div>
 
