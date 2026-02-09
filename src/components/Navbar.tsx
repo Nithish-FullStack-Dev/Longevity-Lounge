@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { StarButton } from "./ui/star-button";
-import { useDesktop } from "@/hooks/useDesktop";
+import { StarButton } from "./ui/star-button"; // Adjust path if necessary
+import { useDesktop } from "@/hooks/useDesktop"; // Adjust path if necessary
 
 interface NavbarProps {
   menuOpen: boolean;
@@ -42,7 +42,6 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   const handleNavClick = (id: string, label: string) => {
     setActiveItem(label);
     closeMenu();
-
     navigate(`/#${id}`);
   };
 
@@ -90,7 +89,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
               return (
                 <li key={item.label} className="nav-item">
                   {isDesktop ? (
-                    /* DESKTOP — Always use StarButton wrapper, toggle visual state with opacity */
+                    /* DESKTOP VERSION */
                     <div
                       onClick={() =>
                         item.id
@@ -101,8 +100,8 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                     >
                       <StarButton
                         lightColor="#F6BF7F"
-                        backgroundColor="black"
-                        borderWidth={1}
+                        backgroundColor={isActive ? "black" : "transparent"}
+                        borderWidth={isActive ? 1 : 0}
                         className={`
                           h-10 px-5 py-2 rounded-full transition-all duration-300
                           ${
@@ -124,7 +123,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                       </StarButton>
                     </div>
                   ) : (
-                    /* MOBILE — Plain button */
+                    /* MOBILE VERSION */
                     <button
                       type="button"
                       onClick={() =>
